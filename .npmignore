@@ -1,0 +1,17 @@
+# Source files
+src/
+__test__/
+benchmarks/
+target/
+
+# Config files
+tsconfig.json
+vitest.config.ts
+.gitignore
+
+# Development
+*.md
+!README.md
+!LICENSE
+.github/
+

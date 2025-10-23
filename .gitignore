@@ -1,0 +1,38 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Rust
+target/
+**/*.rs.bk
+
+# Build output (local development)
+dist/
+build/
+*.tsbuildinfo
+
+# Testing
+coverage/
+.nyc_output/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# NAPI-RS artifacts (for publishing)
+npm/
+
+# Environment
+.env
+.env.local
+
+# OS
+Thumbs.db
+

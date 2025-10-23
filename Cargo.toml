@@ -1,0 +1,22 @@
+[package]
+name = "fast-json-repair"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+napi = { version = "2.16", default-features = false, features = ["napi8"] }
+napi-derive = "2.16"
+serde_json = { version = "1.0", features = ["preserve_order"] }
+
+[build-dependencies]
+napi-build = "2.1"
+
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = 3
+strip = true
+
